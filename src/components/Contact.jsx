@@ -57,7 +57,6 @@ function Contact({ isOn}) {
           <h2 className={`  text-3xl tracking-wider md:text-3xl lg:text-4xl font-bold flex font-[heading] justify-start items-center ${isOn ? 'text-white' : 'text-gray-950'}`}>Let's build a thing</h2>
           <form
             onSubmit={(e) => {handleSubmit(e)}}
-            data-form-id="46b21977-7851-480e-9347-e7f0ab0d98a8"
             data-portal-id="6847886"
             name="Contact Chase Ohlson"
             loading="false"
