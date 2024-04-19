@@ -1,0 +1,29 @@
+
+  #switch[data-ison="true"] {
+    justify-content: flex-end;
+  }
+  
+  .handle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 40px;
+  }
+  
+
+  circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
+.box {
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  background: yellow;
+  cursor: pointer;
+}
+

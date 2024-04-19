@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'numbers';
+  src: url(./fonts/FontsFree-Net-MaelstromBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'highlight';
+  src: url(./fonts/migra/Migra-Extrabold.otf) format('truetype');
+}
+
+@font-face {
+  font-family:'textfont'; ;
+  src: url(./fonts/neue/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family:'heading'; ;
+  src: url(./fonts/tusker/TuskerGrotesk-6700Bold.ttf);
+}
+/* body{
+  font-family: 'textfont', sans-serif;
+} */
