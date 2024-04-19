@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0bef5b60.css",
+    "main.js": "/static/js/main.658671e5.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/ship-5028940_1920.png": "/static/media/ship-5028940_1920.0e2cf90b89ff2effa177.png",
+    "static/media/TuskerGrotesk-6700Bold.ttf": "/static/media/TuskerGrotesk-6700Bold.6827191b5810638992bf.ttf",
+    "static/media/Migra-Extrabold.otf": "/static/media/Migra-Extrabold.0d38ccf2dc0c9c119102.otf",
+    "static/media/birds-5081283_1920.png": "/static/media/birds-5081283_1920.72049c6f189c311ae28d.png",
+    "static/media/FontsFree-Net-MaelstromBold.ttf": "/static/media/FontsFree-Net-MaelstromBold.bf119e236ee8e27ff269.ttf",
+    "static/media/NeueMontreal-Regular.otf": "/static/media/NeueMontreal-Regular.140bfb4a71fe08805d92.otf",
+    "index.html": "/index.html",
+    "main.0bef5b60.css.map": "/static/css/main.0bef5b60.css.map",
+    "main.658671e5.js.map": "/static/js/main.658671e5.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bef5b60.css",
+    "static/js/main.658671e5.js"
+  ]
+}
