@@ -6,7 +6,7 @@ function Contact({ isOn}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('https://portfoliobackend-ecwn2j3fr-vivek-gaurs-projects.vercel.app/api/v1/sendmessage', {
+      const res = await fetch('https://portfoliobackend-2he5.onrender.com/api/v1/sendmessage', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
