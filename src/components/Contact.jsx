@@ -51,7 +51,7 @@ function Contact({ isOn}) {
   }
 
   return (
-    <div className={`w-full h-screen mt-20  flex justify-center items-start ${isOn ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className={`w-full h-screen  flex justify-center items-center ${isOn ? 'bg-gray-900' : 'bg-white'}`}>
       <section className="w-full lg:w-11/12 xl:w-10/12 h-4/5 flex justify-center items-start">
         <div className=" p-5 w-full lg:w-11/12 xl:w-10/12 flex flex-col md:gap-5 lg:gap-5 xl:gap-5 gap-2">
           <h2 className={`  text-3xl tracking-wider md:text-3xl lg:text-4xl font-bold flex font-[heading] justify-start items-center ${isOn ? 'text-white' : 'text-gray-950'}`}>Let's build a thing</h2>
