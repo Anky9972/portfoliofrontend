@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "proxy": "https://portfoliobackend-4t22t2mio-vivek-gaurs-projects.vercel.app",
   "dependencies": {
     "@motionone/utils": "^10.17.0",
