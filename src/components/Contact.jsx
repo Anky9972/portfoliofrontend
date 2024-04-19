@@ -3,36 +3,47 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-hot-toast';
 function Contact({ isOn}) {
   const [details, setDetails] = useState({ firstname: '', lastname: '', email: '', phone: '', subject: '', message: ''});
-  const handleSubmit = async(e)=> {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    try{
-      //render url
-        const res = await fetch('portfoliobackend-ecwn2j3fr-vivek-gaurs-projects.vercel.app/api/v1/sendmessage',{
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(
-            {
-              "firstname": details.firstname,
-              "lastname": details.lastname,
-              "email": details.email,
-              "phone": details.phone,
-              "subject": details.subject,
-              "message": details.message
-            }
-          )
-        })
-        const json = await res.json();
-      
-      if(json.status ){
-        toast.success('Message Sent Successfully')
-      } 
-        console.log(json)
-      }catch(e){
-        console.log(e)  
+    try {
+      const res = await fetch('https://portfoliobackend-ecwn2j3fr-vivek-gaurs-projects.vercel.app/api/v1/sendmessage', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "firstname": details.firstname,
+          "lastname": details.lastname,
+          "email": details.email,
+          "phone": details.phone,
+          "subject": details.subject,
+          "message": details.message
+        }),
+      });
+  
+      if (!res.ok) {
+        throw new Error('Failed to send message. Please try again later.');
       }
-  }
+  
+      // Check if response body is empty
+      const text = await res.text();
+      if (!text) {
+        throw new Error('Empty response from the server.');
+      }
+  
+      // Parse JSON
+      const json = JSON.parse(text);
+  
+      if (json.status) {
+        toast.success('Message Sent Successfully');
+      }
+      console.log(json);
+    } catch (error) {
+      console.error(error);
+      // Handle error (e.g., show error message to the user)
+    }
+  };
+  
 
 
   function handleChange(e){
