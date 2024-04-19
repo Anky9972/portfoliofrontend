@@ -9,7 +9,6 @@ function Contact({ isOn}) {
       const res = await fetch('https://portfoliobackend-ecwn2j3fr-vivek-gaurs-projects.vercel.app/api/v1/sendmessage', {
         method: 'POST',
         headers: {
-          'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
