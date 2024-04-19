@@ -7,7 +7,7 @@ function Contact({ isOn}) {
     e.preventDefault();
     try{
       //render url
-        const res = await fetch('https://portfoliobackend-k8ea.onrender.com/api/v1/sendmessage',{
+        const res = await fetch('portfoliobackend-ecwn2j3fr-vivek-gaurs-projects.vercel.app/api/v1/sendmessage',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
